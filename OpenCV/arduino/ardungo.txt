@@ -1,0 +1,17 @@
+void setup() {
+  Serial.begin(9600);
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  if (Serial.available()) {
+    char data = Serial.read();
+    if (data == '1') {
+      digitalWrite(LED_BUILTIN, HIGH); // Acende o LED quando o rosto é detectado
+    } else {
+      digitalWrite(LED_BUILTIN, LOW); // Apaga o LED caso contrário
+    }
+  }
+}
+
+pip install --user pyserial

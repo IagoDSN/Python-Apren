@@ -1,0 +1,3 @@
+pip install --user pyperclip pillow tkinter
+pip install nltk
+
