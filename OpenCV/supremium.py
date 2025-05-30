@@ -65,7 +65,7 @@ while True:
             last_spoken_time = current_time
 
     annotated_frame = results[0].plot()
-    cv2.imshow("Detecção em Tempo Real", annotai3  ted_frame)
+    cv2.imshow("Detecção em Tempo Real", annotated_frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
