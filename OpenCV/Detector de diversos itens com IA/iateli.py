@@ -21,7 +21,7 @@ COCO_CLASSES = [
     'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush'
 ]
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Configurar a janela em tela cheia
 cv2.namedWindow('Detecção de Objetos', cv2.WND_PROP_FULLSCREEN)
@@ -58,3 +58,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+

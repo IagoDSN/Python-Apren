@@ -15,7 +15,7 @@ engine.setProperty('volume', 1.0)
 
 pygame.mixer.init()
 
-pygame.mixer.music.load("Audio\musica.mp3") 
+pygame.mixer.music.load("musica.mp3") 
 pygame.mixer.music.set_volume(0.3) 
 pygame.mixer.music.play()
 

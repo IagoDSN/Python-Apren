@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO("yolov8n.pt")
 
 # Configure o dispositivo de vídeo virtual do DroidCam (substitua por 0 ou outro índice, se necessário)
-camera_index = 0
+camera_index = 1
 cap = cv2.VideoCapture(camera_index)
 
 if not cap.isOpened():
