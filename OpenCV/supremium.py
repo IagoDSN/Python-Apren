@@ -39,7 +39,6 @@ while True:
         print("Erro ao capturar o frame.")
         break
 
-    # Realiza a inferência com YOLO
     results = model.predict(source=frame, conf=0.5, max_det=50, verbose=False)
     detections = results[0].boxes.data
     detected_objects = []
@@ -69,6 +68,7 @@ while True:
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
 
 cap.release()
 cv2.destroyAllWindows()
