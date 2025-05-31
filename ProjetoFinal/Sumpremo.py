@@ -7,7 +7,7 @@ import threading
 import serial
 
 # Inicializa comunicação serial com o Arduino
-arduino = serial.Serial('COM3', 9600, timeout=1) 
+# arduino = serial.Serial('COM3', 9600, timeout=1) 
 
 model = YOLO("yolov8n.pt")
 
@@ -62,8 +62,8 @@ while True:
             last_spoken_time = current_time
 
         # Envia a quantidade de objetos para o Arduino
-        object_count = len(set(detected_objects))
-        arduino.write(f"{object_count}\n".encode())  
+       # object_count = len(set(detected_objects))
+       # arduino.write(f"{object_count}\n".encode())  
 
     else:
         print("Nenhum objeto detectado.")
@@ -80,7 +80,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-arduino.close()
+# arduino.close()
 
 '''
 #include <Servo.h>
