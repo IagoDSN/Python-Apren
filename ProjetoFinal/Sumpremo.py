@@ -35,7 +35,7 @@ model.to(device)
 print("Pressione 'q' para sair.")
 
 last_spoken_time = 0
-speak_interval = 2
+speak_interval = 3
 
 while True:
     ret, frame = cap.read()
